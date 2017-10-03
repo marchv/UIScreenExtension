@@ -6,7 +6,7 @@ This is an extension to UIScreen that provides information about the pixel densi
 * draw a ruler; or
 * to show a proper ECG graph on the iPhone's screen.
 
-    public extension UIScreen {
+      public extension UIScreen {
     
         /// The number of pixels per inch for this device
         public static let pixelsPerInch: CGFloat?
@@ -25,7 +25,7 @@ This is an extension to UIScreen that provides information about the pixel densi
         
         /// The screen dimension in centimeters
         public static let dimensionInCentimeters: CGSize?
-    }
+      }
 
 The constants will be set to `.none` if the device is unknown. This can happen if Apple releases a new iPhone, so please remember to deal with this in your code.
 
