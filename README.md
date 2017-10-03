@@ -1,6 +1,10 @@
 # UIScreenExtension
 
-This is an extension to UIScreen that provides information about the pixel density (or point density) of iPhones and iPads. This can for example be used to draw a ruler or to show a proper ECG graph on the iPhone's screen.
+This is an extension to UIScreen that provides information about the pixel density (or point density) of iPhones and iPads. For example this can be used to:
+
+* compute the dimension of the screen
+* draw a ruler; or
+* to show a proper ECG graph on the iPhone's screen.
 
     public extension UIScreen {
     
@@ -15,6 +19,12 @@ This is an extension to UIScreen that provides information about the pixel densi
         
         /// The number of points per centimeter for this device
         public static let pointsPerCentimeter: CGFloat?
+        
+        /// The screen dimension in inches
+        public static let dimensionInInches: CGSize?
+        
+        /// The screen dimension in centimeters
+        public static let dimensionInCentimeters: CGSize?
     }
 
 The constants will be set to `.none` if the device is unknown. This can happen if Apple releases a new iPhone, so please remember to deal with this in your code.
@@ -30,11 +40,18 @@ To use the extension in your code first import it by adding:
 
     import UIScreenExtension
     
-And then use it:
+And then use it for example:
 
     if let pointsPerCentimeter = UIScreen.pointsPerCentimeter {
        // code
     }
+
+Or to compute the diagonal screen dimension:
+
+    if let dimensionInInches = UIScreen.dimensionInInches {
+        print(sqrt(pow(dimensionInInches.width, 2) + pow(dimensionInInches.height, 2))) // for example ~5.5 inches for iPhone 7 Plus
+    }
+
 
 ## Support
 

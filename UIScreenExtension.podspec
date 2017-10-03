@@ -1,10 +1,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "UIScreenExtension"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "An extension to UIScreen that offers information about the pixel density (or point density) of iPhones and iPads."
   s.description  = <<-DESC
-  This extension offers information about the pixel/point density measured in either pixels/points per centimeter/inch (PPI/PPCM). This can for example be used to draw a ruler or to show ECG graph on the iPhone's screen.
+                   This extension offers information about the pixel/point density measured in either pixels/points per centimeter/inch (PPI/PPCM).
+                   This can for example be used to compute the screen dimension, draw a ruler or to show ECG graph on the iPhone's screen.
                    DESC
 
   s.homepage     = "https://github.com/marchv/UIScreenExtension"

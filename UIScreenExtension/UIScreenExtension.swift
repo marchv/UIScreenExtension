@@ -20,6 +20,8 @@ private extension UIDevice {
     
 }
 
+private func computeIfSome<T: Any, S: Any>(optional: T?, computation: ((T) -> S)) -> S? { if let some = optional { return computation(some) } else { return .none } }
+
 @available(iOS 9.0, *)
 public extension UIScreen {
     
@@ -70,12 +72,18 @@ public extension UIScreen {
     }()
     
     /// The number of pixels per centimeter for this device
-    static let pixelsPerCentimeter: CGFloat? = { if let pixelsPerInch = pixelsPerInch { return pixelsPerInch / 2.54 } else { return .none } }()
+    static let pixelsPerCentimeter: CGFloat? = computeIfSome(optional: pixelsPerInch, computation: { $0 / 2.54 })
     
     /// The number of points per inch for this device
-    static let pointsPerInch: CGFloat? = { if let pixelsPerInch = pixelsPerInch { return pixelsPerInch / main.nativeScale } else { return .none } }()
+    static let pointsPerInch: CGFloat? = computeIfSome(optional: pixelsPerInch, computation: { $0 / main.nativeScale })
     
     /// The number of points per centimeter for this device
-    static let pointsPerCentimeter: CGFloat? = { if let pixelsPerCentimeter = pixelsPerCentimeter { return pixelsPerCentimeter / main.nativeScale } else { return .none } }()
+    static let pointsPerCentimeter: CGFloat? = computeIfSome(optional: pixelsPerCentimeter, computation: { $0 / main.nativeScale })
+
+    /// The screen dimension in inches
+    static let dimensionInInches: CGSize? = computeIfSome(optional: pixelsPerInch, computation: { CGSize(width: main.nativeBounds.width / $0, height: main.nativeBounds.height / $0) })
     
+    /// The screen dimension in centimeters
+    static let dimensionInCentimeters: CGSize? = computeIfSome(optional: pixelsPerCentimeter, computation: { CGSize(width: main.nativeBounds.width / $0, height: main.nativeBounds.height / $0) })
+
 }
