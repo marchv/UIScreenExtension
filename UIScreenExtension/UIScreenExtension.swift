@@ -28,6 +28,23 @@ public extension UIScreen {
     /// The number of pixels per inch for this device
     static let pixelsPerInch: CGFloat? = {
         switch UIDevice.modelIdentifier {
+        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":             // iPad 2
+            return 132
+            
+        case "iPad2,5", "iPad2,6", "iPad2,7":                        // iPad Mini
+            return 163
+            
+        case "iPad3,1", "iPad3,2", "iPad3,3":            fallthrough // iPad 3rd generation
+        case "iPad3,4", "iPad3,5", "iPad3,6":            fallthrough // iPad 4th generation
+        case "iPad4,1", "iPad4,2", "iPad4,3":            fallthrough // iPad Air
+        case "iPad5,3", "iPad5,4":                       fallthrough // iPad Air 2
+        case "iPad6,7", "iPad6,8":                       fallthrough // iPad Pro (12.9 inch)
+        case "iPad6,3", "iPad6,4":                       fallthrough // iPad Pro (9.7 inch)
+        case "iPad6,11", "iPad6,12":                     fallthrough // iPad 5th generation
+        case "iPad7,1", "iPad7,2":                       fallthrough // iPad Pro (12.9 inch, 2nd generation)
+        case "iPad7,3", "iPad7,4":                                   // iPad Pro (10.5 inch)
+            return 264
+            
         case "iPhone4,1":                                fallthrough // iPhone 4S
         case "iPhone5,1", "iPhone5,2":                   fallthrough // iPhone 5
         case "iPhone5,3", "iPhone5,4":                   fallthrough // iPhone 5C
@@ -39,7 +56,6 @@ public extension UIScreen {
         case "iPhone10,1", "iPhone10,4":                 fallthrough // iPhone 8
         case "iPod5,1":                                  fallthrough // iPod Touch 5th generation
         case "iPod7,1":                                  fallthrough // iPod Touch 6th generation
-        case "iPad2,5", "iPad2,6", "iPad2,7":            fallthrough // iPad Mini
         case "iPad4,4", "iPad4,5", "iPad4,6":            fallthrough // iPad Mini 2
         case "iPad4,7", "iPad4,8", "iPad4,9":            fallthrough // iPad Mini 3
         case "iPad5,1", "iPad5,2":                                   // iPad Mini 4
@@ -53,18 +69,6 @@ public extension UIScreen {
             
         case "iPhone10,3", "iPhone10,6":                             // iPhone X
             return 458
-            
-        case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4": fallthrough // iPad 2
-        case "iPad3,1", "iPad3,2", "iPad3,3":            fallthrough // iPad 3rd generation
-        case "iPad3,4", "iPad3,5", "iPad3,6":            fallthrough // iPad 4th generation
-        case "iPad4,1", "iPad4,2", "iPad4,3":            fallthrough // iPad Air
-        case "iPad5,3", "iPad5,4":                       fallthrough // iPad Air 2
-        case "iPad6,7", "iPad6,8":                       fallthrough // iPad Pro (12.9 inch)
-        case "iPad6,3", "iPad6,4":                       fallthrough // iPad Pro (9.7 inch)
-        case "iPad6,11", "iPad6,12":                     fallthrough // iPad 5th generation
-        case "iPad7,1", "iPad7,2":                       fallthrough // iPad Pro (12.9 inch, 2nd generation)
-        case "iPad7,3", "iPad7,4":                                   // iPad Pro (10.5 inch)
-            return 264
             
         default:                                                     // unknown model identifier
             return .none
