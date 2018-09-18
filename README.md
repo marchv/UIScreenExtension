@@ -55,7 +55,7 @@ Or to compute the diagonal screen dimension:
 
 ## Support
 
-The extension supports all iPhones, iPods and iPads that are supported by iOS 9-11.
+The extension supports all iPhones, iPods and iPads that are supported by iOS 9-12.
 
 
 ## Limitations
