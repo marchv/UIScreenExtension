@@ -55,6 +55,7 @@ public extension UIScreen {
         case "iPhone8,1":                                fallthrough // iPhone 6S
         case "iPhone9,1", "iPhone9,3":                   fallthrough // iPhone 7
         case "iPhone10,1", "iPhone10,4":                 fallthrough // iPhone 8
+        case "iPhone11,8":                               fallthrough // iPhone XR
         case "iPod5,1":                                  fallthrough // iPod Touch 5th generation
         case "iPod7,1":                                  fallthrough // iPod Touch 6th generation
         case "iPad4,4", "iPad4,5", "iPad4,6":            fallthrough // iPad Mini 2
@@ -68,7 +69,9 @@ public extension UIScreen {
         case "iPhone10,2", "iPhone10,5":                             // iPhone 8 Plus
             return 401
             
-        case "iPhone10,3", "iPhone10,6":                             // iPhone X
+        case "iPhone10,3", "iPhone10,6":                 fallthrough // iPhone X
+        case "iPhone11,2":                               fallthrough // iPhone XS
+        case "iPhone11,4", "iPhone11,6":                             // iPhone XS Max
             return 458
             
         default:                                                     // unknown model identifier
