@@ -44,6 +44,7 @@ public extension UIScreen {
         case "iPad7,1", "iPad7,2":                       fallthrough // iPad Pro (12.9 inch, 2nd generation)
         case "iPad7,3", "iPad7,4":                       fallthrough // iPad Pro (10.5 inch)
         case "iPad7,5", "iPad7,6":                       fallthrough // iPad 6th generation
+        case "iPad7,11", "iPad7,12":                     fallthrough // iPad 7th generation
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4": fallthrough // iPad Pro (11 inch)
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8": fallthrough // iPad Pro (12.9 inch, 3rd generation)
         case "iPad11,3", "iPad11,4":                                 // iPad Air (3rd generation)
@@ -59,8 +60,10 @@ public extension UIScreen {
         case "iPhone9,1", "iPhone9,3":                   fallthrough // iPhone 7
         case "iPhone10,1", "iPhone10,4":                 fallthrough // iPhone 8
         case "iPhone11,8":                               fallthrough // iPhone XR
+        case "iPhone12,1":                               fallthrough // iPhone 11
         case "iPod5,1":                                  fallthrough // iPod Touch 5th generation
         case "iPod7,1":                                  fallthrough // iPod Touch 6th generation
+        case "iPod9,1":                                  fallthrough // iPod Touch 7th generation
         case "iPad4,4", "iPad4,5", "iPad4,6":            fallthrough // iPad Mini 2
         case "iPad4,7", "iPad4,8", "iPad4,9":            fallthrough // iPad Mini 3
         case "iPad5,1", "iPad5,2":                       fallthrough // iPad Mini 4
@@ -75,7 +78,9 @@ public extension UIScreen {
             
         case "iPhone10,3", "iPhone10,6":                 fallthrough // iPhone X
         case "iPhone11,2":                               fallthrough // iPhone XS
-        case "iPhone11,4", "iPhone11,6":                             // iPhone XS Max
+        case "iPhone12,3":                               fallthrough // iPhone 11 Pro
+        case "iPhone11,4", "iPhone11,6":                 fallthrough // iPhone XS Max
+        case "iPhone12,5":                                           // iPhone 11 Pro Max
             return 458
             
         default:                                                     // unknown model identifier
