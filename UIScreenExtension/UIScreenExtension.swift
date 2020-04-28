@@ -61,6 +61,7 @@ public extension UIScreen {
         case "iPhone10,1", "iPhone10,4":                 fallthrough // iPhone 8
         case "iPhone11,8":                               fallthrough // iPhone XR
         case "iPhone12,1":                               fallthrough // iPhone 11
+        case "iPhone12,8":                               fallthrough // iPhone SE 2rd generation
         case "iPod5,1":                                  fallthrough // iPod Touch 5th generation
         case "iPod7,1":                                  fallthrough // iPod Touch 6th generation
         case "iPod9,1":                                  fallthrough // iPod Touch 7th generation
