@@ -47,6 +47,8 @@ public extension UIScreen {
         case "iPad7,11", "iPad7,12":                     fallthrough // iPad 7th generation
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4": fallthrough // iPad Pro (11 inch)
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8": fallthrough // iPad Pro (12.9 inch, 3rd generation)
+        case "iPad8,9", "iPad8,10":                      fallthrough // iPad Pro (11 inch, 2nd generation)
+        case "iPad8,11", "iPad8,12":                     fallthrough // iPad Pro (12.9 inch, 4th generation)
         case "iPad11,3", "iPad11,4":                                 // iPad Air (3rd generation)
             return 264
             
