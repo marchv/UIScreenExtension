@@ -17,7 +17,7 @@
 		134B308E1F822DA60040885A /* UIScreenExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIScreenExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		134B30911F822DA60040885A /* UIScreenExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIScreenExtension.h; sourceTree = "<group>"; };
 		134B30921F822DA60040885A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		134B30991F822DC20040885A /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		134B30991F822DC20040885A /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScreenExtension.swift; path = Sources/UIScreenExtension/UIScreenExtension.swift; sourceTree = SOURCE_ROOT; };
 		139181171F8255A2009C354A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		139181191F825CEA009C354A /* UIScreenExtension.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIScreenExtension.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
