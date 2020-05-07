@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.author       = { "Jens Schwarzer" => "jens.schwarzer@marchv.com" }
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/marchv/UIScreenExtension.git", :tag => s.version }
-  s.source_files = "UIScreenExtension", "UIScreenExtension/**/*.{h,swift}"
+  s.source_files = "UIScreenExtension", "UIScreenExtension/**/*.{h,swift}", "Sources/**/*.{h,swift}"
 end
