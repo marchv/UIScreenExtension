@@ -49,7 +49,9 @@ public extension UIScreen {
         case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8": fallthrough // iPad Pro (12.9 inch, 3rd generation)
         case "iPad8,9", "iPad8,10":                      fallthrough // iPad Pro (11 inch, 2nd generation)
         case "iPad8,11", "iPad8,12":                     fallthrough // iPad Pro (12.9 inch, 4th generation)
-        case "iPad11,3", "iPad11,4":                                 // iPad Air (3rd generation)
+        case "iPad11,3", "iPad11,4":                     fallthrough // iPad Air (3rd generation)
+        case "iPad11,6", "iPad11,7":                     fallthrough // iPad 8th generation
+        case "iPad13,1", "iPad13,2":                                 // iPad Air (4th generation)
             return 264
             
         case "iPhone4,1":                                fallthrough // iPhone 4S
@@ -83,8 +85,18 @@ public extension UIScreen {
         case "iPhone11,2":                               fallthrough // iPhone XS
         case "iPhone12,3":                               fallthrough // iPhone 11 Pro
         case "iPhone11,4", "iPhone11,6":                 fallthrough // iPhone XS Max
-        case "iPhone12,5":                                           // iPhone 11 Pro Max
+        case "iPhone12,5":                               fallthrough // iPhone 11 Pro Max
+        case "iPhone13,4":                                           // iPhone 12 Pro Max
             return 458
+            
+        case "iPhone13,2":                                           // iPhone 12
+            return 460
+            
+        case "iPhone13,3":                                           // iPhone 12 Pro
+            return 466
+            
+        case "iPhone13,1":                                           // iPhone 12 Mini
+            return 476
             
         default:                                                     // unknown model identifier
             return .none
