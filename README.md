@@ -32,7 +32,7 @@ The constants will be set to `.none` if the device is unknown. This can happen i
 
 ## Installation and use
 
-The extension can be installed using [Cocoapods](https://cocoapods.org/) by adding below line to your `Podfile`:
+The extension can be installed using Swift Package Manager or [Cocoapods](https://cocoapods.org/) by adding below line to your `Podfile`:
 
     pod 'UIScreenExtension', :git => 'https://github.com/marchv/UIScreenExtension'
 
@@ -55,7 +55,7 @@ Or to compute the diagonal screen dimension:
 
 ## Support
 
-The extension supports all iPhones, iPods and iPads that are supported by iOS 9-12.
+The extension supports all iPhones, iPods and iPads that are supported by iOS 9-14.
 
 
 ## Limitations
