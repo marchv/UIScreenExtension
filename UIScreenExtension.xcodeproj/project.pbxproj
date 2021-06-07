@@ -11,6 +11,7 @@
 		134B309A1F822DC20040885A /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134B30991F822DC20040885A /* UIScreenExtension.swift */; };
 		139181181F8255A2009C354A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 139181171F8255A2009C354A /* README.md */; };
 		1391811A1F825CEA009C354A /* UIScreenExtension.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 139181191F825CEA009C354A /* UIScreenExtension.podspec */; };
+		9AA14A7B266B79A300ED55F2 /* SimulatorDeviceInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA14A7A266B79A300ED55F2 /* SimulatorDeviceInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		134B30991F822DC20040885A /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScreenExtension.swift; path = Sources/UIScreenExtension/UIScreenExtension.swift; sourceTree = SOURCE_ROOT; };
 		139181171F8255A2009C354A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		139181191F825CEA009C354A /* UIScreenExtension.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIScreenExtension.podspec; sourceTree = "<group>"; };
+		9AA14A7A266B79A300ED55F2 /* SimulatorDeviceInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorDeviceInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				134B30911F822DA60040885A /* UIScreenExtension.h */,
 				134B30921F822DA60040885A /* Info.plist */,
 				134B30991F822DC20040885A /* UIScreenExtension.swift */,
+				9AA14A7A266B79A300ED55F2 /* SimulatorDeviceInfoView.swift */,
 			);
 			path = UIScreenExtension;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				134B309A1F822DC20040885A /* UIScreenExtension.swift in Sources */,
+				9AA14A7B266B79A300ED55F2 /* SimulatorDeviceInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
