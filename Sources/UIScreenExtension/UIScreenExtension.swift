@@ -47,7 +47,8 @@ public extension UIScreen {
         case "iPhone12,8":                                           // iPhone SE 2nd generation
             return 4.7
             
-        case "iPhone13,1":                                           // iPhone 12 Mini
+        case "iPhone13,1":                               fallthrough // iPhone 12 Mini
+        case "iPhone14,4":                                           // iPhone 13 Mini
             return 5.4
             
         case "iPhone7,1":                                fallthrough // iPhone 6 Plus
@@ -64,14 +65,17 @@ public extension UIScreen {
         case "iPhone11,8":                               fallthrough // iPhone XR
         case "iPhone12,1":                               fallthrough // iPhone 11
         case "iPhone13,2":                               fallthrough // iPhone 12
-        case "iPhone13,3":                                           // iPhone 12 Pro
+        case "iPhone13,3":                               fallthrough // iPhone 12 Pro
+        case "iPhone14,5":                               fallthrough // iPhone 13
+        case "iPhone14,2":                                           // iPHone 13 Pro
             return 6.1
             
         case "iPhone11,4", "iPhone11,6":                 fallthrough // iPhone XS Max
         case "iPhone12,5":                                           // iPhone 11 Pro Max
             return 6.5
             
-        case "iPhone13,4":                                           // iPhone 12 Pro Max
+        case "iPhone13,4":                               fallthrough // iPhone 12 Pro Max
+        case "iPhone14,3":                                           // iPhone 13 Pro Max
             return 6.7
             
         case "iPad2,5", "iPad2,6", "iPad2,7":            fallthrough // iPad Mini
@@ -130,7 +134,7 @@ public extension UIScreen {
     
     /// The number of points per centimeter for this device
     static let pointsPerCentimeter: CGFloat? = computeIfSome(optional: pixelsPerCentimeter, computation: { $0 / main.nativeScale })
-
+    
     /// The screen dimension in inches
     static let dimensionInInches: CGSize? = computeIfSome(optional: diagonalInInches, computation: {
         let ratio = main.nativeBounds.width / main.nativeBounds.height
@@ -141,5 +145,5 @@ public extension UIScreen {
     
     /// The screen dimension in centimeters
     static let dimensionInCentimeters: CGSize? = computeIfSome(optional: pixelsPerCentimeter, computation: { CGSize(width: main.nativeBounds.width / $0, height: main.nativeBounds.height / $0) })
-
+    
 }
