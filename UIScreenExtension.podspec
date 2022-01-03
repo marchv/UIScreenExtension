@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UIScreenExtension"
-  s.version      = "0.0.7"
+  s.version      = "0.0.10"
   s.summary      = "An extension to UIScreen that offers information about the pixel density (or point density) of iPhones and iPads."
   s.description  = <<-DESC
                    This extension offers information about the pixel/point density measured in either pixels/points per centimeter/inch (PPI/PPCM).
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/marchv/UIScreenExtension"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { "Jens Schwarzer" => "jens.schwarzer@marchv.com" }
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "13.0"
   s.source       = { :git => "https://github.com/marchv/UIScreenExtension.git", :tag => s.version }
   s.source_files = "UIScreenExtension", "UIScreenExtension/**/*.{h,swift}", "Sources/**/*.{h,swift}"
 end
