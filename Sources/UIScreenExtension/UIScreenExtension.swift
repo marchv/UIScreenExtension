@@ -44,7 +44,8 @@ public extension UIScreen {
         case "iPhone8,1":                                fallthrough // iPhone 6S
         case "iPhone9,1", "iPhone9,3":                   fallthrough // iPhone 7
         case "iPhone10,1", "iPhone10,4":                 fallthrough // iPhone 8
-        case "iPhone12,8":                                           // iPhone SE 2nd generation
+        case "iPhone12,8":                               fallthrough // iPhone SE 2nd generation
+        case "iPhone14,6":                                           // iPhone SE (3rd generation)
             return 4.7
             
         case "iPhone13,1":                               fallthrough // iPhone 12 Mini
@@ -67,7 +68,9 @@ public extension UIScreen {
         case "iPhone13,2":                               fallthrough // iPhone 12
         case "iPhone13,3":                               fallthrough // iPhone 12 Pro
         case "iPhone14,5":                               fallthrough // iPhone 13
-        case "iPhone14,2":                                           // iPHone 13 Pro
+        case "iPhone14,2":                               fallthrough // iPhone 13 Pro
+        case "iPhone14,7":                               fallthrough // iPhone 14
+        case "iPhone15,2":                                           // iPhone 14 Pro
             return 6.1
             
         case "iPhone11,4", "iPhone11,6":                 fallthrough // iPhone XS Max
@@ -75,7 +78,9 @@ public extension UIScreen {
             return 6.5
             
         case "iPhone13,4":                               fallthrough // iPhone 12 Pro Max
-        case "iPhone14,3":                                           // iPhone 13 Pro Max
+        case "iPhone14,3":                               fallthrough // iPhone 13 Pro Max
+        case "iPhone14,8":                               fallthrough // iPhone 14 Plus
+        case "iPhone15,3":                                           // iPhone 14 Pro Max
             return 6.7
             
         case "iPad2,5", "iPad2,6", "iPad2,7":            fallthrough // iPad Mini
