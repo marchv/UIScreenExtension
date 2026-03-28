@@ -74,7 +74,8 @@ public extension UIScreen {
         case "iPhone15,4":                                     fallthrough // iPhone 15
         case "iPhone16,1":                                     fallthrough // iPhone 15 Pro
         case "iPhone17,3":                                     fallthrough // iPhone 16
-        case "iPhone17,5":                                                 // iPhone 16e
+        case "iPhone17,5":                                     fallthrough // iPhone 16e
+        case "iPhone18,5":                                                 // iPhone 17e
             return 6.1
 
         case "iPhone17,1":                                     fallthrough // iPhone 16 Pro
@@ -104,9 +105,12 @@ public extension UIScreen {
         case "iPad4,4", "iPad4,5", "iPad4,6":                  fallthrough // iPad Mini 2
         case "iPad4,7", "iPad4,8", "iPad4,9":                  fallthrough // iPad Mini 3
         case "iPad5,1", "iPad5,2":                             fallthrough // iPad Mini 4
-        case "iPad11,1", "iPad11,2":                           fallthrough // iPad Mini 5
-        case "iPad14,1", "iPad14,2":                                       // iPad Mini 6
+        case "iPad11,1", "iPad11,2":                                       // iPad Mini 5
             return 7.9
+
+        case "iPad14,1", "iPad14,2":                           fallthrough // iPad Mini 6
+        case "iPad16,1", "iPad16,2":                                       // iPad Mini 7
+            return 8.3
             
         case "iPad2,1", "iPad2,2", "iPad2,3", "iPad2,4":       fallthrough // iPad 2
         case "iPad3,1", "iPad3,2", "iPad3,3":                  fallthrough // iPad 3rd generation
@@ -136,15 +140,19 @@ public extension UIScreen {
         case "iPad8,9", "iPad8,10":                            fallthrough // iPad Pro (11 inch, 2nd generation)
         case "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7":   fallthrough // iPad Pro (11 inch, 3rd generation)
         case "iPad14,3", "iPad14,4":                           fallthrough // iPad Pro (11 inch, 4th generation)
-        case "iPad14,8", "iPad14,9":                           fallthrough // iPad Air (11 inch, 6th generation)
-        case "iPad16,3", "iPad16,4":                           fallthrough // iPad Pro (11 inch, 7th generation)
-        case "iPad15,3", "iPad15,4":                           fallthrough // iPad Air (11 inch, 7th generation)
-        case "iPad15,7", "iPad15,8":                                       // iPad 11th generation
+        case "iPad14,8", "iPad14,9":                           fallthrough // iPad Air (11 inch, M2)
+        case "iPad16,3", "iPad16,4":                           fallthrough // iPad Pro (11 inch, M4)
+        case "iPad15,3", "iPad15,4":                           fallthrough // iPad Air (11 inch, M3)
+        case "iPad15,7", "iPad15,8":                           fallthrough // iPad 11th generation
+        case "iPad17,1", "iPad17,2":                           fallthrough // iPad Pro (11 inch, M5)
+        case "iPad16,8", "iPad16,9":                                       // iPad Air (11 inch, M4)
             return 11.0
             
-        case "iPad14,10", "iPad14,11":                         fallthrough // iPad Air (13 inch, 6th generation)
-        case "iPad16,5", "iPad16,6":                           fallthrough // iPad Pro (13 inch, 7th generation)
-        case "iPad15,5", "iPad15,6":                                       // iPad Air (13 inch, 7th generation)
+        case "iPad14,10", "iPad14,11":                         fallthrough // iPad Air (13 inch, M2)
+        case "iPad16,5", "iPad16,6":                           fallthrough // iPad Pro (13 inch, M4)
+        case "iPad15,5", "iPad15,6":                           fallthrough // iPad Air (13 inch, M3)
+        case "iPad17,3", "iPad17,4":                           fallthrough // iPad Pro (13 inch, M5)
+        case "iPad16,10", "iPad16,11":                                     // iPad Air (13 inch, M4)
             return 13.0
 
         case "iPad6,7", "iPad6,8":                             fallthrough // iPad Pro (12.9 inch)
